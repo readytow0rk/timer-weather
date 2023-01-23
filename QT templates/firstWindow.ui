@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>153</width>
+    <height>78</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+background-color:black;
+}</string>
+  </property>
+  <widget class="QPushButton" name="pb1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&amp;display=swap');
+QPushButton {
+font-family: 'Oswald', sans-serif;
+}
+QPushButton:hover {
+background-color: green;
+font-size: 20px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Timer</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&amp;display=swap');
+QPushButton {
+font-family: 'Oswald', sans-serif;
+}
+QPushButton:hover {
+background-color: red;
+font-size: 20px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Turn off</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
