@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>TT</string>
   </property>
   <property name="styleSheet">
    <string notr="true">QDialog {
@@ -29,8 +29,9 @@ background-color:black;
    </property>
    <property name="styleSheet">
     <string notr="true">@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&amp;display=swap');
-QPushButton {
-font-family: 'Oswald', sans-serif;
+QPushButton{
+border-radius:5px;
+background-color:rgb(240, 240, 241)
 }
 QPushButton:hover {
 background-color: green;
@@ -53,8 +54,9 @@ font-size: 20px;
    </property>
    <property name="styleSheet">
     <string notr="true">@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&amp;display=swap');
-QPushButton {
-font-family: 'Oswald', sans-serif;
+QPushButton{
+border-radius:5px;
+background-color:rgb(240, 240, 241)
 }
 QPushButton:hover {
 background-color: red;

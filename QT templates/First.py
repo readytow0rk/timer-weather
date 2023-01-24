@@ -19,8 +19,9 @@ class Ui_First(object):
         self.pb1 = QtWidgets.QPushButton(First)
         self.pb1.setGeometry(QtCore.QRect(20, 10, 111, 28))
         self.pb1.setStyleSheet("@import url(\'https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap\');\n"
-"QPushButton {\n"
-"font-family: \'Oswald\', sans-serif;\n"
+"QPushButton{\n"
+"border-radius:5px;\n"
+"background-color:rgb(240, 240, 241)\n"
 "}\n"
 "QPushButton:hover {\n"
 "background-color: green;\n"
@@ -31,8 +32,9 @@ class Ui_First(object):
         self.pb2 = QtWidgets.QPushButton(First)
         self.pb2.setGeometry(QtCore.QRect(20, 40, 111, 28))
         self.pb2.setStyleSheet("@import url(\'https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap\');\n"
-"QPushButton {\n"
-"font-family: \'Oswald\', sans-serif;\n"
+"QPushButton{\n"
+"border-radius:5px;\n"
+"background-color:rgb(240, 240, 241)\n"
 "}\n"
 "QPushButton:hover {\n"
 "background-color: red;\n"
@@ -46,7 +48,7 @@ class Ui_First(object):
 
     def retranslateUi(self, First):
         _translate = QtCore.QCoreApplication.translate
-        First.setWindowTitle(_translate("First", "Dialog"))
+        First.setWindowTitle(_translate("First", "TT"))
         self.pb1.setText(_translate("First", "Timer"))
         self.pb2.setText(_translate("First", "Turn off"))
 

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Timer</string>
   </property>
   <property name="styleSheet">
    <string notr="true">QDialog {
@@ -27,6 +27,12 @@ background-color:black;
      <height>22</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QTimeEdit {
+border-radius:25px;
+background-color:rgb(240, 240, 241)
+}</string>
+   </property>
   </widget>
   <widget class="QDateEdit" name="dateEdit">
    <property name="geometry">
@@ -36,6 +42,12 @@ background-color:black;
      <width>101</width>
      <height>22</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit{
+border-radius:52px;
+background-color:rgb(240, 240, 241)
+}</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
@@ -48,8 +60,12 @@ background-color:black;
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">QPushButton:hover {
-background-color:rgb(0, 255, 255);
+    <string notr="true">QPushButton{
+border-radius:5px;
+background-color:rgb(240, 240, 241)
+}
+QPushButton:hover {
+background-color:rgb(0, 244, 138);
 font-size: 20px
 }
 </string>
@@ -68,7 +84,11 @@ font-size: 20px
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">QPushButton:hover {
+    <string notr="true">QPushButton{
+border-radius:5px;
+background-color:rgb(240, 240, 241)
+}
+QPushButton:hover {
 background-color:rgb(0, 255, 255);
 font-size: 20px
 }
@@ -89,7 +109,8 @@ font-size: 20px
    </property>
    <property name="styleSheet">
     <string notr="true">QLineEdit {
-
+border-radius:5px;
+background-color:rgb(240, 240, 241)
 }</string>
    </property>
    <property name="text">

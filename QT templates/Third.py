@@ -21,18 +21,30 @@ class Ui_TurnOff(object):
         self.timeEdit.setObjectName("timeEdit")
         self.textBrowser = QtWidgets.QTextBrowser(TurnOff)
         self.textBrowser.setGeometry(QtCore.QRect(10, 10, 191, 51))
+        self.textBrowser.setStyleSheet("QTextBrowser{\n"
+"border-radius:5px;\n"
+"background-color:rgb(240, 240, 241)\n"
+"}")
         self.textBrowser.setObjectName("textBrowser")
         self.pushButton = QtWidgets.QPushButton(TurnOff)
         self.pushButton.setGeometry(QtCore.QRect(10, 100, 93, 28))
-        self.pushButton.setStyleSheet("QPushButton:hover {\n"
-"background-color:rgb(0, 255, 255);\n"
+        self.pushButton.setStyleSheet("QPushButton{\n"
+"border-radius:5px;\n"
+"background-color:rgb(240, 240, 241)\n"
+"}\n"
+"QPushButton:hover {\n"
+"background-color:rgb(0, 244, 138);\n"
 "font-size: 20px\n"
 "}\n"
 "")
         self.pushButton.setObjectName("pushButton")
         self.pushButton_2 = QtWidgets.QPushButton(TurnOff)
         self.pushButton_2.setGeometry(QtCore.QRect(110, 100, 93, 28))
-        self.pushButton_2.setStyleSheet("QPushButton:hover {\n"
+        self.pushButton_2.setStyleSheet("QPushButton{\n"
+"border-radius:5px;\n"
+"background-color:rgb(240, 240, 241)\n"
+"}\n"
+"QPushButton:hover {\n"
 "background-color:rgb(0, 255, 255);\n"
 "font-size: 20px\n"
 "}\n"
@@ -44,7 +56,7 @@ class Ui_TurnOff(object):
 
     def retranslateUi(self, TurnOff):
         _translate = QtCore.QCoreApplication.translate
-        TurnOff.setWindowTitle(_translate("TurnOff", "Dialog"))
+        TurnOff.setWindowTitle(_translate("TurnOff", "Turn Off"))
         self.textBrowser.setHtml(_translate("TurnOff", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -52,6 +64,5 @@ class Ui_TurnOff(object):
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt; font-weight:600;\">When should i turn off your computer?</span></p></body></html>"))
         self.pushButton.setText(_translate("TurnOff", "Done"))
         self.pushButton_2.setText(_translate("TurnOff", "Back"))
-
 
 

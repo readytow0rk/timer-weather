@@ -18,21 +18,37 @@ class Ui_Timer(object):
 "}")
         self.timeEdit = QtWidgets.QTimeEdit(Timer)
         self.timeEdit.setGeometry(QtCore.QRect(50, 40, 118, 22))
+        self.timeEdit.setStyleSheet("QTimeEdit {\n"
+"border-radius:25px;\n"
+"background-color:rgb(240, 240, 241)\n"
+"}")
         self.timeEdit.setObjectName("timeEdit")
         self.dateEdit = QtWidgets.QDateEdit(Timer)
         self.dateEdit.setGeometry(QtCore.QRect(60, 70, 101, 22))
+        self.dateEdit.setStyleSheet("QDateEdit{\n"
+"border-radius:52px;\n"
+"background-color:rgb(240, 240, 241)\n"
+"}")
         self.dateEdit.setObjectName("dateEdit")
         self.pushButton = QtWidgets.QPushButton(Timer)
         self.pushButton.setGeometry(QtCore.QRect(10, 100, 93, 28))
-        self.pushButton.setStyleSheet("QPushButton:hover {\n"
-"background-color:rgb(0, 255, 255);\n"
+        self.pushButton.setStyleSheet("QPushButton{\n"
+"border-radius:5px;\n"
+"background-color:rgb(240, 240, 241)\n"
+"}\n"
+"QPushButton:hover {\n"
+"background-color:rgb(0, 244, 138);\n"
 "font-size: 20px\n"
 "}\n"
 "")
         self.pushButton.setObjectName("pushButton")
         self.pushButton_2 = QtWidgets.QPushButton(Timer)
         self.pushButton_2.setGeometry(QtCore.QRect(110, 100, 93, 28))
-        self.pushButton_2.setStyleSheet("QPushButton:hover {\n"
+        self.pushButton_2.setStyleSheet("QPushButton{\n"
+"border-radius:5px;\n"
+"background-color:rgb(240, 240, 241)\n"
+"}\n"
+"QPushButton:hover {\n"
 "background-color:rgb(0, 255, 255);\n"
 "font-size: 20px\n"
 "}\n"
@@ -41,7 +57,8 @@ class Ui_Timer(object):
         self.lineEdit = QtWidgets.QLineEdit(Timer)
         self.lineEdit.setGeometry(QtCore.QRect(10, 10, 191, 22))
         self.lineEdit.setStyleSheet("QLineEdit {\n"
-"\n"
+"border-radius:5px;\n"
+"background-color:rgb(240, 240, 241)\n"
 "}")
         self.lineEdit.setObjectName("lineEdit")
 
@@ -50,10 +67,9 @@ class Ui_Timer(object):
 
     def retranslateUi(self, Timer):
         _translate = QtCore.QCoreApplication.translate
-        Timer.setWindowTitle(_translate("Timer", "Dialog"))
+        Timer.setWindowTitle(_translate("Timer", "Timer"))
         self.pushButton.setText(_translate("Timer", "Done"))
         self.pushButton_2.setText(_translate("Timer", "Back"))
         self.lineEdit.setText(_translate("Timer", "    What u want to see here ?"))
-
 
 
