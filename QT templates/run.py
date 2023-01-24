@@ -11,8 +11,7 @@ ui = Ui_First()
 ui.setupUi(First)
 First.show()
 
-
-
+   
 def openTimerWindow():
     global Timer
     Timer = QtWidgets.QDialog()
@@ -28,11 +27,28 @@ def openTimerWindow():
     ui.pushButton_2.clicked.connect(returnToMain)
 
 
-ui.pb1.clicked.connect(openTimerWindow)    
+def openTurnOff():
+    global TurnOff
+    TurnOff = QtWidgets.QDialog()
+    ui = Ui_TurnOff()
+    ui.setupUi(TurnOff)
+    First.close()
+    TurnOff.show()
+
+    def returnToMainn():
+        TurnOff.close()
+        First.show()     
+    ui.pushButton_2.clicked.connect(returnToMainn)    
 
 
+ui.pb2.clicked.connect(openTurnOff)
+ui.pb1.clicked.connect(openTimerWindow)   
+    
 
 sys.exit(app.exec())
+
+
+
 
 
 

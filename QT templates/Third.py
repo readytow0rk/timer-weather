@@ -54,11 +54,4 @@ class Ui_TurnOff(object):
         self.pushButton_2.setText(_translate("TurnOff", "Back"))
 
 
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    TurnOff = QtWidgets.QDialog()
-    ui = Ui_TurnOff()
-    ui.setupUi(TurnOff)
-    TurnOff.show()
-    sys.exit(app.exec())
+
