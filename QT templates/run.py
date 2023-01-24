@@ -2,7 +2,7 @@ import sys
 from PyQt6 import QtCore, QtGui, QtWidgets
 from First import Ui_First
 from Second import Ui_Timer
-from third import Ui_TurnOff
+from Third import Ui_TurnOff
 
 app = QtWidgets.QApplication(sys.argv)
 
