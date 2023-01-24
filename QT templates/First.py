@@ -9,14 +9,14 @@
 from PyQt6 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Dialog(object):
-    def setupUi(self, Dialog):
-        Dialog.setObjectName("Dialog")
-        Dialog.resize(153, 78)
-        Dialog.setStyleSheet("QDialog {\n"
+class Ui_First(object):
+    def setupUi(self, First):
+        First.setObjectName("First")
+        First.resize(153, 78)
+        First.setStyleSheet("QDialog {\n"
 "background-color:black;\n"
 "}")
-        self.pb1 = QtWidgets.QPushButton(Dialog)
+        self.pb1 = QtWidgets.QPushButton(First)
         self.pb1.setGeometry(QtCore.QRect(20, 10, 111, 28))
         self.pb1.setStyleSheet("@import url(\'https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap\');\n"
 "QPushButton {\n"
@@ -28,7 +28,7 @@ class Ui_Dialog(object):
 "}\n"
 "")
         self.pb1.setObjectName("pb1")
-        self.pb2 = QtWidgets.QPushButton(Dialog)
+        self.pb2 = QtWidgets.QPushButton(First)
         self.pb2.setGeometry(QtCore.QRect(20, 40, 111, 28))
         self.pb2.setStyleSheet("@import url(\'https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap\');\n"
 "QPushButton {\n"
@@ -41,21 +41,13 @@ class Ui_Dialog(object):
 "")
         self.pb2.setObjectName("pb2")
 
-        self.retranslateUi(Dialog)
-        QtCore.QMetaObject.connectSlotsByName(Dialog)
+        self.retranslateUi(First)
+        QtCore.QMetaObject.connectSlotsByName(First)
 
-    def retranslateUi(self, Dialog):
+    def retranslateUi(self, First):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.pb1.setText(_translate("Dialog", "Timer"))
-        self.pb2.setText(_translate("Dialog", "Turn off"))
+        First.setWindowTitle(_translate("First", "Dialog"))
+        self.pb1.setText(_translate("First", "Timer"))
+        self.pb2.setText(_translate("First", "Turn off"))
 
 
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    Dialog = QtWidgets.QDialog()
-    ui = Ui_Dialog()
-    ui.setupUi(Dialog)
-    Dialog.show()
-    sys.exit(app.exec())

@@ -9,20 +9,20 @@
 from PyQt6 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Dialog(object):
-    def setupUi(self, Dialog):
-        Dialog.setObjectName("Dialog")
-        Dialog.resize(213, 137)
-        Dialog.setStyleSheet("QDialog {\n"
+class Ui_Timer(object):
+    def setupUi(self, Timer):
+        Timer.setObjectName("Timer")
+        Timer.resize(213, 137)
+        Timer.setStyleSheet("QDialog {\n"
 "background-color:black;\n"
 "}")
-        self.timeEdit = QtWidgets.QTimeEdit(Dialog)
+        self.timeEdit = QtWidgets.QTimeEdit(Timer)
         self.timeEdit.setGeometry(QtCore.QRect(50, 40, 118, 22))
         self.timeEdit.setObjectName("timeEdit")
-        self.dateEdit = QtWidgets.QDateEdit(Dialog)
+        self.dateEdit = QtWidgets.QDateEdit(Timer)
         self.dateEdit.setGeometry(QtCore.QRect(60, 70, 101, 22))
         self.dateEdit.setObjectName("dateEdit")
-        self.pushButton = QtWidgets.QPushButton(Dialog)
+        self.pushButton = QtWidgets.QPushButton(Timer)
         self.pushButton.setGeometry(QtCore.QRect(10, 100, 93, 28))
         self.pushButton.setStyleSheet("QPushButton:hover {\n"
 "background-color:rgb(0, 255, 255);\n"
@@ -30,7 +30,7 @@ class Ui_Dialog(object):
 "}\n"
 "")
         self.pushButton.setObjectName("pushButton")
-        self.pushButton_2 = QtWidgets.QPushButton(Dialog)
+        self.pushButton_2 = QtWidgets.QPushButton(Timer)
         self.pushButton_2.setGeometry(QtCore.QRect(110, 100, 93, 28))
         self.pushButton_2.setStyleSheet("QPushButton:hover {\n"
 "background-color:rgb(0, 255, 255);\n"
@@ -38,29 +38,22 @@ class Ui_Dialog(object):
 "}\n"
 "")
         self.pushButton_2.setObjectName("pushButton_2")
-        self.lineEdit = QtWidgets.QLineEdit(Dialog)
+        self.lineEdit = QtWidgets.QLineEdit(Timer)
         self.lineEdit.setGeometry(QtCore.QRect(10, 10, 191, 22))
         self.lineEdit.setStyleSheet("QLineEdit {\n"
 "\n"
 "}")
         self.lineEdit.setObjectName("lineEdit")
 
-        self.retranslateUi(Dialog)
-        QtCore.QMetaObject.connectSlotsByName(Dialog)
+        self.retranslateUi(Timer)
+        QtCore.QMetaObject.connectSlotsByName(Timer)
 
-    def retranslateUi(self, Dialog):
+    def retranslateUi(self, Timer):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.pushButton.setText(_translate("Dialog", "Done"))
-        self.pushButton_2.setText(_translate("Dialog", "Back"))
-        self.lineEdit.setText(_translate("Dialog", "    What u want to see here ?"))
+        Timer.setWindowTitle(_translate("Timer", "Dialog"))
+        self.pushButton.setText(_translate("Timer", "Done"))
+        self.pushButton_2.setText(_translate("Timer", "Back"))
+        self.lineEdit.setText(_translate("Timer", "    What u want to see here ?"))
 
 
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    Dialog = QtWidgets.QDialog()
-    ui = Ui_Dialog()
-    ui.setupUi(Dialog)
-    Dialog.show()
-    sys.exit(app.exec())
+
