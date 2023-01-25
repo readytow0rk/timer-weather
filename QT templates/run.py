@@ -70,31 +70,18 @@ def openWeather():
         
         temp = w.temperature('celsius')['temp']
 
-        ui.weatherexport.setText('In ' + place  + w.detailed_status  + ' now' )
-        ui.weatherexport.setText( 'it about : ' + str(temp) + ' degree')
+        if temp < 5 :
+            ui.weatherexport.setText('In ' + place  + ' '+ w.detailed_status  + ' now.' +  ' \nIt about : ' + str(temp) + ' degree.' +' ' '\nPut on all your clothes )') 
+        elif temp < 10 :
+            ui.weatherexport.setText('In ' + place  + ' '+ w.detailed_status  + ' now.' +  ' \nIt about : ' + str(temp) + ' degree.' +' ' '\n50/50 but  cold.') 
+        elif temp < 20 :
+            ui.weatherexport.setText('In ' + place  + ' '+ w.detailed_status  + ' now.' +  ' \nIt about : ' + str(temp) + ' degree.' +' ' '\nput on everything you want.') 
+        else : 
+            ui.weatherexport.setText('In ' + place  + ' '+ w.detailed_status  + ' now.' +  ' \nIt about : ' + str(temp) + ' degree.' +' ' '\nhell on the Eart.')
+        
     ui.but1.clicked.connect(getWeather)
-        # mgr = owm.weather_manager()
-        # place = input('')
-        # lineEdit = place
-        # observation = mgr.weather_at_place(place)
-        # w = observation.weather
-        # temp = w.temperature('celsius')['temp']
-        # ui.lineEdit.clicked.connect(getWeather)
-        # weatherexport = print
-        # print('In ' + place  + w.detailed_status  + ' now' )
-        # print( 'it about : ' + str(temp) + ' degree')
-        # if temp < 5 :
-        #     print('Put on all your clothes )') 
-        # elif temp < 10 :
-        #     print('50/50 but  cold.') 
-        # elif temp < 20 :
-        #     print('put on everything you want.') 
-        # else : 
-        #     print('hell on the Eart.')
-
+      
         
-        
-    
     def returnToMainn():
         weather.close()
         First.show()     
