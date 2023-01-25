@@ -45,6 +45,13 @@ def openTurnOff():
     ui.pushButton_2.clicked.connect(returnToMainn)    
 
 
+
+ui.pb2.clicked.connect(openTurnOff)
+
+ui.pb1.clicked.connect(openTimerWindow)   
+    
+
+
 def openWeather():
     global weather
     weather = QtWidgets.QDialog()
@@ -53,26 +60,27 @@ def openWeather():
     First.close()
     weather.show()
     
-    # owm = OWM('4383a10a783aec00988fb6992379ab92')
-    # mgr = owm.weather_manager()
-    # place = input('Where u live?')
-    # observation = mgr.weather_at_place(place)
-    # w = observation.weather
-    # temp = w.temperature('celsius')['temp']
-    # print('In' + place + w.detailed_status + 'now' )
-
-    # print( 'it about : ' + str(temp) + ' degree')
-
-    # if temp < 5 :
-    #     print('Put on all your clothes )') 
-    # elif temp < 10 :
-    #     print('50/50 but  cold.') 
-    # elif temp < 20 :
-    #     print('put on everything you want.') 
-    # else : 
-    #     print('hell on the Eart.')
+    def getWeather():
+        owm = OWM('4383a10a783aec00988fb6992379ab92')
+        mgr = owm.weather_manager()
+        place = input('')
+        lineEdit = place
+        observation = mgr.weather_at_place(place)
+        w = observation.weather
+        temp = w.temperature('celsius')['temp']
+        ui.lineEdit.clicked.connect(getWeather)
+        weatherexport = print
+        print('In ' + place  + w.detailed_status  + ' now' )
+        print( 'it about : ' + str(temp) + ' degree')
+        if temp < 5 :
+            print('Put on all your clothes )') 
+        elif temp < 10 :
+            print('50/50 but  cold.') 
+        elif temp < 20 :
+            print('put on everything you want.') 
+        else : 
+            print('hell on the Eart.')
     
-# input()
     def returnToMainn():
         weather.close()
         First.show()     
@@ -80,10 +88,6 @@ def openWeather():
     
 
 ui.pb2_2.clicked.connect(openWeather)
-ui.pb2.clicked.connect(openTurnOff)
-ui.pb1.clicked.connect(openTimerWindow)   
-    
-
 sys.exit(app.exec())
 
 
