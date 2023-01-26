@@ -66,3 +66,11 @@ class Ui_Timer(object):
         self.lineEdit.setText(_translate("Timer", "    What u want to see here ?"))
 
 
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Timer = QtWidgets.QDialog()
+    ui = Ui_Timer()
+    ui.setupUi(Timer)
+    Timer.show()
+    sys.exit(app.exec())
