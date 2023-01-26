@@ -38,9 +38,10 @@ def openTimerWindow():
             timeUser = int(ui.lineEdit_2.text())
             comment = ui.lineEdit.text()
             for q in range(timeUser):
-                time.sleep(60)
+                time.sleep(3) #set to 60
                 i += 1 
             showAlert()
+            return
         
         
     
@@ -58,7 +59,8 @@ def openTimerWindow():
         reminder = QtWidgets.QDialog()
         ui = Ui_reminder()
         ui.setupUi(reminder)
-        reminder.show()    
+        reminder.show()
+            
        
     ui.pushButton.clicked.connect(timerClose)
     ui.pushButton.clicked.connect(timerStart)
