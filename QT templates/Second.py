@@ -12,26 +12,19 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_Timer(object):
     def setupUi(self, Timer):
         Timer.setObjectName("Timer")
-        Timer.resize(213, 137)
+        Timer.resize(211, 110)
         Timer.setStyleSheet("QDialog {\n"
 "background-color:black;\n"
 "}")
         self.timeEdit = QtWidgets.QTimeEdit(Timer)
-        self.timeEdit.setGeometry(QtCore.QRect(50, 40, 118, 22))
+        self.timeEdit.setGeometry(QtCore.QRect(30, 40, 151, 22))
         self.timeEdit.setStyleSheet("QTimeEdit {\n"
 "border-radius:25px;\n"
 "background-color:rgb(240, 240, 241)\n"
 "}")
         self.timeEdit.setObjectName("timeEdit")
-        self.dateEdit = QtWidgets.QDateEdit(Timer)
-        self.dateEdit.setGeometry(QtCore.QRect(60, 70, 101, 22))
-        self.dateEdit.setStyleSheet("QDateEdit{\n"
-"border-radius:52px;\n"
-"background-color:rgb(240, 240, 241)\n"
-"}")
-        self.dateEdit.setObjectName("dateEdit")
         self.pushButton = QtWidgets.QPushButton(Timer)
-        self.pushButton.setGeometry(QtCore.QRect(10, 100, 93, 28))
+        self.pushButton.setGeometry(QtCore.QRect(10, 70, 93, 28))
         self.pushButton.setStyleSheet("QPushButton{\n"
 "border-radius:5px;\n"
 "background-color:rgb(240, 240, 241)\n"
@@ -43,7 +36,7 @@ class Ui_Timer(object):
 "")
         self.pushButton.setObjectName("pushButton")
         self.pushButton_2 = QtWidgets.QPushButton(Timer)
-        self.pushButton_2.setGeometry(QtCore.QRect(110, 100, 93, 28))
+        self.pushButton_2.setGeometry(QtCore.QRect(110, 70, 93, 28))
         self.pushButton_2.setStyleSheet("QPushButton{\n"
 "border-radius:5px;\n"
 "background-color:rgb(240, 240, 241)\n"

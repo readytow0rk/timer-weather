@@ -24,6 +24,13 @@ def openTimerWindow():
     First.close()
     Timer.show()
 
+# work of timer...
+
+    def timerStart():
+        Timer.close()
+       
+    ui.pushButton.clicked.connect(timerStart)
+# work of timer...
     def returnToMain():
         Timer.close()
         First.show()
@@ -59,9 +66,13 @@ def openWeather():
     ui.setupUi(weather)
     First.close()
     weather.show()
-    
+
+   
     
     def getWeather():
+        # while place != observation :
+        #     ui.weatherexport.setText('Write real city') 
+
         owm = OWM('4383a10a783aec00988fb6992379ab92')
         mgr = owm.weather_manager()
         place = ui.lineEdit.text()
@@ -69,6 +80,8 @@ def openWeather():
         w = observation.weather
         
         temp = w.temperature('celsius')['temp']
+
+            
 
         if temp < 5 :
             ui.weatherexport.setText('In ' + place  + ' '+ w.detailed_status  + ' now.' +  ' \nIt about : ' + str(temp) + ' degree.' +' ' '\nPut on all your clothes )') 
