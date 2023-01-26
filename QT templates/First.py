@@ -65,3 +65,4 @@ class Ui_First(object):
         self.pb2.setText(_translate("First", "Turn off"))
         self.pb2_2.setText(_translate("First", "Weather"))
 
+

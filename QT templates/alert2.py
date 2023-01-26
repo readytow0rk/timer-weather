@@ -13,6 +13,9 @@ class Ui_alert2(object):
     def setupUi(self, alert2):
         alert2.setObjectName("alert2")
         alert2.resize(210, 84)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("clock.ico"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        alert2.setWindowIcon(icon)
         alert2.setStyleSheet("QDialog {\n"
 "background-color:black;\n"
 "}")
@@ -31,9 +34,9 @@ class Ui_alert2(object):
 "}")
         self.remi.setText("")
         self.remi.setObjectName("remi")
-        self.pushButton = QtWidgets.QPushButton(alert2)
-        self.pushButton.setGeometry(QtCore.QRect(60, 50, 93, 28))
-        self.pushButton.setStyleSheet("QPushButton{\n"
+        self.pushButt = QtWidgets.QPushButton(alert2)
+        self.pushButt.setGeometry(QtCore.QRect(60, 50, 93, 28))
+        self.pushButt.setStyleSheet("QPushButton{\n"
 "border-radius:5px;\n"
 "background-color:rgb(240, 240, 241)\n"
 "}\n"
@@ -42,7 +45,7 @@ class Ui_alert2(object):
 "font-size: 20px\n"
 "}\n"
 "")
-        self.pushButton.setObjectName("pushButton")
+        self.pushButt.setObjectName("pushButt")
 
         self.retranslateUi(alert2)
         self.buttonBox.accepted.connect(alert2.accept) # type: ignore
@@ -52,14 +55,6 @@ class Ui_alert2(object):
     def retranslateUi(self, alert2):
         _translate = QtCore.QCoreApplication.translate
         alert2.setWindowTitle(_translate("alert2", "Alert"))
-        self.pushButton.setText(_translate("alert2", "OK"))
+        self.pushButt.setText(_translate("alert2", "OK"))
 
 
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    alert2 = QtWidgets.QDialog()
-    ui = Ui_alert2()
-    ui.setupUi(alert2)
-    alert2.show()
-    sys.exit(app.exec())

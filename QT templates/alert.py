@@ -70,6 +70,3 @@ class Ui_reminder(object):
         self.pushButton_2.setText(_translate("reminder", "Close"))
 
 
-
-    
-    

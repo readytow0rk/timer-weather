@@ -13,6 +13,9 @@ class Ui_TurnOff(object):
     def setupUi(self, TurnOff):
         TurnOff.setObjectName("TurnOff")
         TurnOff.resize(210, 139)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("clock.ico"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        TurnOff.setWindowIcon(icon)
         TurnOff.setStyleSheet("QDialog {\n"
 "background:black;\n"
 "}")
@@ -26,9 +29,9 @@ class Ui_TurnOff(object):
 "background-color:rgb(240, 240, 241)\n"
 "}")
         self.textBrowser.setObjectName("textBrowser")
-        self.pushButton = QtWidgets.QPushButton(TurnOff)
-        self.pushButton.setGeometry(QtCore.QRect(10, 100, 93, 28))
-        self.pushButton.setStyleSheet("QPushButton{\n"
+        self.push = QtWidgets.QPushButton(TurnOff)
+        self.push.setGeometry(QtCore.QRect(10, 100, 93, 28))
+        self.push.setStyleSheet("QPushButton{\n"
 "border-radius:5px;\n"
 "background-color:rgb(240, 240, 241)\n"
 "}\n"
@@ -37,7 +40,7 @@ class Ui_TurnOff(object):
 "font-size: 20px\n"
 "}\n"
 "")
-        self.pushButton.setObjectName("pushButton")
+        self.push.setObjectName("push")
         self.pushButton_2 = QtWidgets.QPushButton(TurnOff)
         self.pushButton_2.setGeometry(QtCore.QRect(110, 100, 93, 28))
         self.pushButton_2.setStyleSheet("QPushButton{\n"
@@ -62,7 +65,8 @@ class Ui_TurnOff(object):
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt; font-weight:600;\">When should i turn off your computer?</span></p></body></html>"))
-        self.pushButton.setText(_translate("TurnOff", "Done"))
+        self.push.setText(_translate("TurnOff", "Done"))
         self.pushButton_2.setText(_translate("TurnOff", "Back"))
+
 
 

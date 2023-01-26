@@ -67,3 +67,4 @@ class Ui_Timer(object):
         self.lineEdit_2.setText(_translate("Timer", " write amount of minutes"))
 
 
+

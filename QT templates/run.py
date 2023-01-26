@@ -3,10 +3,11 @@ import time
 from PyQt6 import QtCore, QtGui, QtWidgets
 from First import Ui_First
 from Second import Ui_Timer
-from Third import Ui_TurnOff
+from third import Ui_TurnOff
 from weather import Ui_weather
 from alert import Ui_reminder
 from pyowm import OWM
+from alert2 import Ui_alert2
  
 
 
@@ -67,7 +68,7 @@ def openTimerWindow():
         
         def alertOff():
             reminder.close()
-            
+
 
         ui.pushButton.clicked.connect(alertRep)
         ui.pushButton_2.clicked.connect(alertOff)
@@ -89,6 +90,25 @@ def openTurnOff():
     First.close()
     TurnOff.show()
 
+# work of turnoffer ...
+    def turnOff():
+        # shutdown /s /t 60  it will turn off your pc )
+        TurnOff.close()
+        global alert2
+        alert2 = QtWidgets.QDialog()
+        ui = Ui_alert2()
+        ui.setupUi(alert2)
+        alert2.show()
+    
+    
+    def closeAlertt():
+        alert2.close()
+
+        ui.pushButt.clicked.connct(closeAlertt)
+
+
+    ui.push.clicked.connect(turnOff)
+# work of turnoffer ...
     def returnToMainn():
         TurnOff.close()
         First.show()     
