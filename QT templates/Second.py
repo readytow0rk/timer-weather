@@ -16,13 +16,6 @@ class Ui_Timer(object):
         Timer.setStyleSheet("QDialog {\n"
 "background-color:black;\n"
 "}")
-        self.timeEdit = QtWidgets.QTimeEdit(Timer)
-        self.timeEdit.setGeometry(QtCore.QRect(30, 40, 151, 22))
-        self.timeEdit.setStyleSheet("QTimeEdit {\n"
-"border-radius:25px;\n"
-"background-color:rgb(240, 240, 241)\n"
-"}")
-        self.timeEdit.setObjectName("timeEdit")
         self.pushButton = QtWidgets.QPushButton(Timer)
         self.pushButton.setGeometry(QtCore.QRect(10, 70, 93, 28))
         self.pushButton.setStyleSheet("QPushButton{\n"
@@ -54,6 +47,13 @@ class Ui_Timer(object):
 "background-color:rgb(240, 240, 241)\n"
 "}")
         self.lineEdit.setObjectName("lineEdit")
+        self.lineEdit_2 = QtWidgets.QLineEdit(Timer)
+        self.lineEdit_2.setGeometry(QtCore.QRect(30, 40, 151, 22))
+        self.lineEdit_2.setStyleSheet("QLineEdit {\n"
+"border-radius:5px;\n"
+"background-color:rgb(240, 240, 241)\n"
+"}")
+        self.lineEdit_2.setObjectName("lineEdit_2")
 
         self.retranslateUi(Timer)
         QtCore.QMetaObject.connectSlotsByName(Timer)
@@ -64,13 +64,6 @@ class Ui_Timer(object):
         self.pushButton.setText(_translate("Timer", "Done"))
         self.pushButton_2.setText(_translate("Timer", "Back"))
         self.lineEdit.setText(_translate("Timer", "    What u want to see here ?"))
+        self.lineEdit_2.setText(_translate("Timer", " write amount of minutes"))
 
 
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    Timer = QtWidgets.QDialog()
-    ui = Ui_Timer()
-    ui.setupUi(Timer)
-    Timer.show()
-    sys.exit(app.exec())

@@ -30,26 +30,26 @@ def openTimerWindow():
 # work of timer...
 
 
-
-    # while True:
+    def timerStart():
+        while True:
         
-    #     i = 0 #hours
-    #     ii = 0 #minutes
-    #     timeUser = dateTimeFromText()
-    #     comment = ui.lineEdit.text()
-    #     for q in range(timeUser):
-    #         time.sleep(1)
-    #         i += 1 
-
+            i = 0 #hours
+            ii = 0 #minutes
+            timeUser = int(ui.lineEdit_2.text())
+            comment = ui.lineEdit.text()
+            for q in range(timeUser):
+                time.sleep(60)
+                i += 1 
+            showAlert()
         
-        # ui.lineEdit.text(comment)
+        
     
 
 
 
 
 
-    def timerStart():
+    def timerClose():
         Timer.close()
         
 
@@ -58,9 +58,9 @@ def openTimerWindow():
         reminder = QtWidgets.QDialog()
         ui = Ui_reminder()
         ui.setupUi(reminder)
-        Timer.close()
         reminder.show()    
        
+    ui.pushButton.clicked.connect(timerClose)
     ui.pushButton.clicked.connect(timerStart)
 # work of timer...
     def returnToMain():
