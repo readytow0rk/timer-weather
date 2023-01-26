@@ -5,6 +5,7 @@ from First import Ui_First
 from Second import Ui_Timer
 from Third import Ui_TurnOff
 from weather import Ui_weather
+from alert import Ui_reminder
 from pyowm import OWM
  
 
@@ -31,15 +32,17 @@ def openTimerWindow():
 
 
     # while True:
+        
     #     i = 0 #hours
     #     ii = 0 #minutes
-    #     timeUser = int(input('set seconds'))
-    #     comment = str(input('write comment'))
+    #     timeUser = dateTimeFromText()
+    #     comment = ui.lineEdit.text()
     #     for q in range(timeUser):
     #         time.sleep(1)
     #         i += 1 
-    #     print('time out')
-    #     print(comment)
+
+        
+        # ui.lineEdit.text(comment)
     
 
 
@@ -48,7 +51,15 @@ def openTimerWindow():
 
     def timerStart():
         Timer.close()
+        
 
+    def showAlert():
+        global reminder
+        reminder = QtWidgets.QDialog()
+        ui = Ui_reminder()
+        ui.setupUi(reminder)
+        Timer.close()
+        reminder.show()    
        
     ui.pushButton.clicked.connect(timerStart)
 # work of timer...

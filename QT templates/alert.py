@@ -70,11 +70,6 @@ class Ui_reminder(object):
         self.pushButton_2.setText(_translate("reminder", "Close"))
 
 
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    reminder = QtWidgets.QDialog()
-    ui = Ui_reminder()
-    ui.setupUi(reminder)
-    reminder.show()
-    sys.exit(app.exec())
+
+    
+    
