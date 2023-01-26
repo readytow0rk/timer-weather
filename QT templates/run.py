@@ -41,13 +41,12 @@ def openTimerWindow():
                 time.sleep(3) #set to 60
                 i += 1 
             showAlert()
+            # lineEdit=remi
+            # comment
             return
+
+            
         
-        
-    
-
-
-
 
 
     def timerClose():
@@ -60,8 +59,18 @@ def openTimerWindow():
         ui = Ui_reminder()
         ui.setupUi(reminder)
         reminder.show()
-            
+
        
+        def alertRep():
+            reminder.close()
+            Timer.show()
+        
+        def alertOff():
+            reminder.close()
+            
+
+        ui.pushButton.clicked.connect(alertRep)
+        ui.pushButton_2.clicked.connect(alertOff)
     ui.pushButton.clicked.connect(timerClose)
     ui.pushButton.clicked.connect(timerStart)
 # work of timer...
