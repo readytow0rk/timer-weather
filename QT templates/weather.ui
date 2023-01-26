@@ -75,9 +75,9 @@ font-size: 20px
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>10</y>
+     <y>5</y>
      <width>131</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="font">
@@ -99,9 +99,9 @@ background-color:rgb(240, 240, 241)
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>40</y>
+     <y>30</y>
      <width>191</width>
-     <height>51</height>
+     <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">

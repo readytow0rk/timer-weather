@@ -44,7 +44,7 @@ class Ui_weather(object):
 "")
         self.but2.setObjectName("but2")
         self.lineEdit = QtWidgets.QLineEdit(weather)
-        self.lineEdit.setGeometry(QtCore.QRect(40, 10, 131, 22))
+        self.lineEdit.setGeometry(QtCore.QRect(40, 5, 131, 21))
         font = QtGui.QFont()
         font.setPointSize(10)
         self.lineEdit.setFont(font)
@@ -54,7 +54,7 @@ class Ui_weather(object):
 "}")
         self.lineEdit.setObjectName("lineEdit")
         self.weatherexport = QtWidgets.QTextBrowser(weather)
-        self.weatherexport.setGeometry(QtCore.QRect(10, 40, 191, 51))
+        self.weatherexport.setGeometry(QtCore.QRect(10, 30, 191, 61))
         self.weatherexport.setStyleSheet("QTextBrowser{\n"
 "border-radius:5px;\n"
 "background-color:rgb(240, 240, 241)\n"
@@ -75,6 +75,4 @@ class Ui_weather(object):
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:7.8pt;\"><br /></p></body></html>"))
-
-
 
