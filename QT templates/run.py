@@ -33,9 +33,10 @@ def openTimerWindow():
     def timerStart():
         # while int(timeUser) < 1 or int(timeUser) > 10000:
         #     ui.lineEdit.setText('error')
+        
 
         while True:
-        
+                
             i = 0 #hours
             ii = 0 #minutes
             timeUser = int(ui.lineEdit_2.text())
@@ -46,6 +47,8 @@ def openTimerWindow():
             showAlert()
             
             return
+   
+        # ui.remi.setText(ui.lineEdit.text()) 
 
             
         
@@ -61,7 +64,7 @@ def openTimerWindow():
         ui = Ui_reminder()
         ui.setupUi(reminder)
         reminder.show()
-
+        
        
         def alertRep():
             reminder.close()
