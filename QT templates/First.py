@@ -12,7 +12,7 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_First(object):
     def setupUi(self, First):
         First.setObjectName("First")
-        First.resize(153, 106)
+        First.resize(153, 80)
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("clock.ico"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         First.setWindowIcon(icon)
@@ -32,9 +32,9 @@ class Ui_First(object):
 "}\n"
 "")
         self.pb1.setObjectName("pb1")
-        self.pb2 = QtWidgets.QPushButton(First)
-        self.pb2.setGeometry(QtCore.QRect(20, 40, 111, 28))
-        self.pb2.setStyleSheet("@import url(\'https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap\');\n"
+        self.pb2_2 = QtWidgets.QPushButton(First)
+        self.pb2_2.setGeometry(QtCore.QRect(20, 40, 111, 28))
+        self.pb2_2.setStyleSheet("@import url(\'https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap\');\n"
 "QPushButton{\n"
 "border-radius:5px;\n"
 "background-color:rgb(240, 240, 241)\n"
@@ -44,18 +44,6 @@ class Ui_First(object):
 "font-size: 20px;\n"
 "}\n"
 "")
-        self.pb2.setObjectName("pb2")
-        self.pb2_2 = QtWidgets.QPushButton(First)
-        self.pb2_2.setGeometry(QtCore.QRect(20, 70, 111, 28))
-        self.pb2_2.setStyleSheet("QPushButton{\n"
-"border-radius:5px;\n"
-"background-color:rgb(240, 240, 241)\n"
-"}\n"
-"QPushButton:hover {\n"
-"background-color:rgb(0, 255, 255);\n"
-"font-size: 20px\n"
-"}\n"
-"")
         self.pb2_2.setObjectName("pb2_2")
 
         self.retranslateUi(First)
@@ -63,8 +51,9 @@ class Ui_First(object):
 
     def retranslateUi(self, First):
         _translate = QtCore.QCoreApplication.translate
-        First.setWindowTitle(_translate("First", "TTW"))
+        First.setWindowTitle(_translate("First", "TW"))
         self.pb1.setText(_translate("First", "Timer"))
-        self.pb2.setText(_translate("First", "Turn off"))
         self.pb2_2.setText(_translate("First", "Weather"))
+
+
 
