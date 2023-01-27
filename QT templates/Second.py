@@ -13,6 +13,9 @@ class Ui_Timer(object):
     def setupUi(self, Timer):
         Timer.setObjectName("Timer")
         Timer.resize(211, 110)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("clock.ico"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        Timer.setWindowIcon(icon)
         Timer.setStyleSheet("QDialog {\n"
 "background-color:black;\n"
 "}")

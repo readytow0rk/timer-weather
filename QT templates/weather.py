@@ -16,6 +16,9 @@ class Ui_weather(object):
         font = QtGui.QFont()
         font.setPointSize(10)
         weather.setFont(font)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("clock.ico"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        weather.setWindowIcon(icon)
         weather.setStyleSheet("QDialog {\n"
 "background:black;\n"
 "}")
@@ -75,4 +78,6 @@ class Ui_weather(object):
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:7.8pt;\"><br /></p></body></html>"))
+
+
 

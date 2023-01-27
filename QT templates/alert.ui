@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Alert</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>clock.ico</normaloff>clock.ico</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">QDialog {
 background-color:black;

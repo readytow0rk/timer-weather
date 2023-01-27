@@ -18,6 +18,10 @@
   <property name="windowTitle">
    <string>Weather</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>clock.ico</normaloff>clock.ico</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">QDialog {
 background:black;

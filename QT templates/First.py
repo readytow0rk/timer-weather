@@ -13,6 +13,9 @@ class Ui_First(object):
     def setupUi(self, First):
         First.setObjectName("First")
         First.resize(153, 106)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("clock.ico"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        First.setWindowIcon(icon)
         First.setStyleSheet("QDialog {\n"
 "background-color:black;\n"
 "}")
@@ -64,5 +67,4 @@ class Ui_First(object):
         self.pb1.setText(_translate("First", "Timer"))
         self.pb2.setText(_translate("First", "Turn off"))
         self.pb2_2.setText(_translate("First", "Weather"))
-
 

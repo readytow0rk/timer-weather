@@ -42,8 +42,7 @@ def openTimerWindow():
                 time.sleep(3) #set to 60
                 i += 1 
             showAlert()
-            # lineEdit=remi
-            # comment
+            
             return
 
             
@@ -81,7 +80,7 @@ def openTimerWindow():
 
     ui.pushButton_2.clicked.connect(returnToMain)
 
-
+#heroku validation
 def openTurnOff():
     global TurnOff
     TurnOff = QtWidgets.QDialog()
@@ -108,7 +107,7 @@ def openTurnOff():
 
 
     ui.push.clicked.connect(turnOff)
-# work of turnoffer ...
+# work of turnoffer ...     fucking tabulation
     def returnToMainn():
         TurnOff.close()
         First.show()     
