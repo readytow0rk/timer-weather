@@ -31,6 +31,9 @@ def openTimerWindow():
 
 
     def timerStart():
+        # while int(timeUser) < 1 or int(timeUser) > 10000:
+        #     ui.lineEdit.setText('error')
+
         while True:
         
             i = 0 #hours
@@ -95,8 +98,7 @@ def openWeather():
    
     
     def getWeather():
-        # while place != observation :
-        #     ui.weatherexport.setText('Write real city') 
+       
 
         owm = OWM('4383a10a783aec00988fb6992379ab92')
         mgr = owm.weather_manager()
@@ -107,7 +109,8 @@ def openWeather():
         temp = w.temperature('celsius')['temp']
 
             
-
+        # while ui.lineEdit.text() == observation :
+        #   ui.weatherexport.setText('Write a COUNTRY OR CITY')
         if temp < 5 :
             ui.weatherexport.setText('In ' + place  + ' '+ w.detailed_status  + ' now.' +  ' \nIt about : ' + str(temp) + ' degree.' +' ' '\nPut on all your clothes )') 
         elif temp < 10 :
