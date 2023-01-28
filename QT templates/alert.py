@@ -14,7 +14,7 @@ class Ui_reminder(object):
         reminder.setObjectName("reminder")
         reminder.resize(212, 129)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../../../../.designer/backup/clock.ico"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("clock.ico"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         reminder.setWindowIcon(icon)
         reminder.setStyleSheet("QDialog {\n"
 "background-color:black;\n"

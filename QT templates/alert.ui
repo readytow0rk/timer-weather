@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../../../../.designer/backup/clock.ico</normaloff>../../../../.designer/backup/clock.ico</iconset>
+    <normaloff>clock.ico</normaloff>clock.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">QDialog {
