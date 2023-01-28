@@ -14,7 +14,7 @@ class Ui_reminder(object):
         reminder.setObjectName("reminder")
         reminder.resize(212, 129)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("clock.ico"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("../../../../.designer/backup/clock.ico"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         reminder.setWindowIcon(icon)
         reminder.setStyleSheet("QDialog {\n"
 "background-color:black;\n"
@@ -24,16 +24,6 @@ class Ui_reminder(object):
         self.buttonBox.setOrientation(QtCore.Qt.Orientation.Horizontal)
         self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.StandardButton.Cancel|QtWidgets.QDialogButtonBox.StandardButton.Ok)
         self.buttonBox.setObjectName("buttonBox")
-        self.remi = QtWidgets.QLineEdit(reminder)
-        self.remi.setGeometry(QtCore.QRect(10, 10, 191, 31))
-        self.remi.setStyleSheet("QLineEdit {\n"
-"\n"
-"border-radius:5px;\n"
-"background-color:rgb(240, 240, 241)\n"
-"\n"
-"}")
-        self.remi.setText("")
-        self.remi.setObjectName("remi")
         self.pushButton = QtWidgets.QPushButton(reminder)
         self.pushButton.setGeometry(QtCore.QRect(10, 50, 191, 31))
         self.pushButton.setStyleSheet("QPushButton {\n"
@@ -60,6 +50,13 @@ class Ui_reminder(object):
 "}\n"
 "")
         self.pushButton_2.setObjectName("pushButton_2")
+        self.lineEdit = QtWidgets.QLineEdit(reminder)
+        self.lineEdit.setGeometry(QtCore.QRect(10, 10, 191, 31))
+        self.lineEdit.setStyleSheet("QLineEdit {\n"
+"border-radius:5px;\n"
+"background-color:rgb(240, 240, 241)\n"
+"}")
+        self.lineEdit.setObjectName("lineEdit")
 
         self.retranslateUi(reminder)
         self.buttonBox.accepted.connect(reminder.accept) # type: ignore
@@ -71,5 +68,6 @@ class Ui_reminder(object):
         reminder.setWindowTitle(_translate("reminder", "Alert"))
         self.pushButton.setText(_translate("reminder", "Repeat"))
         self.pushButton_2.setText(_translate("reminder", "Close"))
+        self.lineEdit.setText(_translate("reminder", "    What u want to see here ?"))
 
 

@@ -30,9 +30,15 @@ def openTimerWindow():
     def timerStart():
         # while int(timeUser) < 1 or int(timeUser) > 10000:
         #     ui.lineEdit.setText('error')
+            # name = input('Enter your name:')
 
-        while True:
+            # while name == '':
+            #     print('write something')
+            #     name = input('Enter your name:')
+            # print('ok') i understand how working validation but i have not enough time to find rules for this lirary to do it
 
+
+                          
             i = 0  # hours
             ii = 0  # minutes
             timeUser = int(ui.lineEdit_2.text())
@@ -41,11 +47,11 @@ def openTimerWindow():
                 time.sleep(3)  # set to 60
                 i += 1
             showAlert()
-
+            # ui.lineEdit.setText(ui.lineEdit.text())
             return
-
-        # ui.remi.setText(ui.lineEdit.text())
-
+    
+        
+# and i not understanding how to share text from timer to reminder as well
     def timerClose():
         Timer.close()
 
@@ -88,7 +94,10 @@ def openWeather():
     weather.show()
 
     def getWeather():
-
+      # while name == '':
+    #       print('write something')
+    #       name = input('Enter your name:')
+      # print('ok') i understand how working validation but i have not enough time to find rules for this lirary to do it
         owm = OWM("4383a10a783aec00988fb6992379ab92")
         mgr = owm.weather_manager()
         place = ui.lineEdit.text()
