@@ -1,1 +1,13 @@
-# Your requirements go here
+PyQt6
+pyowm
+time
+
+import sys
+import time
+from PyQt6 import QtCore, QtGui, QtWidgets
+from First import Ui_First
+from Second import Ui_Timer
+from weather import Ui_weather
+from alert import Ui_reminder
+from pyowm import OWM
+from alert2 import Ui_alert2
