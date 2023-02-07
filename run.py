@@ -2,15 +2,22 @@ import time
 import colorama 
 from pyowm import OWM
 
+colorama.init()
+        
+print(colorama.Back.GREEN)
 
-name = input('Timer or Weather ?\n  T or W:')
+name = input('Timer or Weather ?\n  T or W:') 
 
 
-while name != 't'  :
+while name != 't' or name != 'w':
+    colorama.init()   
+    print(colorama.Back.RED)
     print('only Timer or Weather')
     name = input('"' + name + '"' + ' not allowed\n  T or W:' )
 if name == 't':    
     while True:
+        colorama.init()
+        print(colorama.Back.YELLOW)
         i = 0 #hours
         ii = 0 #minutes
         timeUser = int(input('Set seconds:'))
