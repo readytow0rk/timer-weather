@@ -1,6 +1,26 @@
-# TW 
-- This is attempt of kindfull app and it working.So, we have only 2 buttons. 1-st is Timer open the window where you can choose after x minutes you will recieve a notification what this time pass.
-2-nd is Wheather button, what open window where you can choose any city or country.You will recieve temperature, clouds condition and advice what you need to dress.
+# App whith 2 options time and weather
+ ![TW main menu](screen/7.png)  ![TW timer](screen/8.png)
+
+## First scr
+     In first screenshot we se what happened if you will choose only right answers.
+## Second scr
+     In second screenshot we se how validation work.
+
+### Bugs 
+    Validation not work with time. If you will choose something less than 1 (0,9) you will broke app.Choosing letters will broke app as well.
+
+#### Validator Testing
+![valid](screen/9.png)
+![valid](screen/10.png)
+
+
+    I have not much commits because i converted project what i was creating all this time to regular code for deploy on heroku 
+
+# I cant add this app on heroku so i tooked code from this app, fixed validations and deploy on heroku. I not deleted this part because this explain of creating this project.
+## TW 
+
+    This is attempt of kindfull app and it working.So, we have only 2 buttons. 1-st is Timer open the window where you can choose after x minutes you will recieve a notification what this time pass.
+    2-nd is Wheather button, what open window where you can choose any city or country.You will recieve temperature, clouds condition and advice what you need to dress.
 
 ![TW main menu](screen/1.png)  ![TW timer](screen/2.png)  ![TW reminder](screen/3.png)  ![TW weather](screen/4.png)
 
